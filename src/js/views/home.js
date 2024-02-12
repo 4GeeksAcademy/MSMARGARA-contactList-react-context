@@ -1,15 +1,33 @@
-import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
-import "../../styles/home.css";
+import React, { useContext, useEffect } from "react";
+import { Navbar } from "../component/navbar";
+import { ContactCard } from "../component/contactCard";
+import { Context } from "../store/appContext"; // Importa el contexto global
 
-export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
-		<p>
-			<img src={rigoImage} />
-		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
-	</div>
-);
+export const Home = () => {
+	const { store, actions } = useContext(Context);
+  
+	// URL de la imagen fija
+	const defaultImageUrl = "https://via.placeholder.com/150";
+  
+	useEffect(() => {
+	  actions.listContacts();
+	}, []);
+  
+	return (
+	  <div>
+		<Navbar />
+		<div className="text-center mt-5">
+		  {store.contacts.map((contact, index) => (
+			<ContactCard
+			  key={index}
+			  contact={contact}
+			  defaultImageUrl={defaultImageUrl}
+			/>
+		  ))}
+		</div>
+	  </div>
+	);
+  };
+  
+  export default Home;
+

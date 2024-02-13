@@ -11,16 +11,18 @@ export const ContactCard = ({ contact }) => {
   };
 
   return (
-    <div className="card mb-3">
-      <div className="row g-0">
-        <div className="col-md-4">
+    <div className="card contactCard">
+      <div className="row">
+        <div className="col-md-2 colorColumn1"></div>
+        <div className="col-md-1 colorColumn2"></div>
+        <div className="col-md-3">
           <img
             src={contact.image || "https://via.placeholder.com/150"} 
             className="img-fluid rounded-start"
             alt="Contact"
           />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-4">
           <div className="card-body">
             <p className="card-text">Name: {contact.full_name}</p>
             <p className="card-text">Address: {contact.address}</p>

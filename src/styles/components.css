@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*Navbar style*/
+.navbar{
+    padding-right: 3rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    padding-left: 3rem;
+    font-family: Merriweather;
+    height: 5rem;
+}
+.addContact{
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    background-color: #3cb371;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+}
+.title{
+    font-size: 1.7rem;
+}
+/* ContactCard Style*/
+.contactCard{
+    margin: 3rem;
+    background-color: white;
+}
+.colorColumn1:empty {
+    background-color: #ffa128;
+    width: 2.5rem;
+}
+.colorColumn2:empty {
+    background-color: #fc5500;
+    width: 1rem;
+    border-top-right-radius: 2rem;
+}

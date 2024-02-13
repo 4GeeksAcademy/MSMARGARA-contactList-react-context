@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../styles/components.css";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<div className="d-flex justify-content-end w-100">
+		<nav className="navbar">
+			<div className="d-flex justify-content-between align-items-center w-100">
+				<span className="ml-auto title">My Contact List</span>
 				<Link to="/demo">
-					<button className="btn btn-primary">Add new contact</button>
+					<button className="btn addContact">Add new contact</button>
 				</Link>
 			</div>
 		</nav>

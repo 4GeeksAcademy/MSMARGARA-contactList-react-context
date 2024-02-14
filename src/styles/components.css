@@ -19,20 +19,88 @@
     padding-right: 1rem;
     color: white;
 }
+.addContact:hover{
+    color: white !important;
+}
+.addContact:focus {
+    outline: none !important; 
+}
 .title{
-    font-size: 1.7rem;
+    font-size: 2rem;
+    margin-left: 2.5rem;
 }
 /* ContactCard Style*/
 .contactCard{
     margin: 3rem;
     background-color: white;
+    font-family: Merriweather;
+    border-top-right-radius: 3rem;
+    border: none;
 }
 .colorColumn1:empty {
-    background-color: #ffa128;
+    background-color:#FF5722;
     width: 2.5rem;
 }
 .colorColumn2:empty {
-    background-color: #fc5500;
+    background-color:#FFB74D ;
     width: 1rem;
-    border-top-right-radius: 2rem;
+    border-top-right-radius: 6rem;
+}
+.img{
+   height: 9rem;
+   margin-top: 0.5rem;
+   margin-left: 2rem;
+   margin-bottom: 0.5rem;
+}
+.name{
+    font-size: 1.6rem;
+    text-align: left;
+    font-weight: bolder;
+}
+.data{
+    text-align: left;
+    line-height: 0.7;
+    font-size: 0.9rem;
+}
+.italic {
+    font-style: italic;
+    color: rgb(129, 128, 128);
+}
+.text{
+    margin-left: 2rem;
+}
+.btn_edit, .btn_delete {
+    color: white; 
+    width: 10rem; 
+    text-align: center; 
+    border: none; 
+    outline: none; 
+    display: inline-block; 
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.btn_delete {
+    border-top-left-radius: 0; 
+    background-color: #0D47A1 ;
+    border-bottom-right-radius: 2rem;
+    margin-top: 0.2rem;
+}
+.btn_edit{
+    background-color: #fcad8e;
+    border-top-left-radius: 2rem;
+    margin-bottom: 0.2rem;
+}
+.btn_edit:focus,
+.btn_delete:focus {
+    outline: 2px solid transparent; 
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.7); 
+}
+.btn_delete:hover,
+.btn_edit:hover{
+    color: white;
+}
+/* Footer Style*/
+.footer {
+    background-color: white;
+    height: 2rem; 
 }

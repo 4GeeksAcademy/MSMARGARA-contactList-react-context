@@ -78,7 +78,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			},
 			updateContact: async (id, full_name, email, address, phone) => {
-				try {
+				try {				
 					const data = {
 						full_name: full_name,
 						email: email,
@@ -119,5 +119,4 @@ const getState = ({ getStore, getActions, setStore }) => {
 		}	
 	};
 };
-
 export default getState;

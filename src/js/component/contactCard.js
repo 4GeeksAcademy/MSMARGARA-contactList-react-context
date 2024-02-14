@@ -13,32 +13,30 @@ export const ContactCard = ({ contact }) => {
   return (
     <div className="card contactCard">
       <div className="row">
-        <div className="col-md-2 colorColumn1"></div>
-        <div className="col-md-1 colorColumn2"></div>
-        <div className="col-md-3">
-          <img
-            src={contact.image || "https://via.placeholder.com/150"} 
-            className="img-fluid rounded-start"
-            alt="Contact"
-          />
-        </div>
-        <div className="col-md-4">
-          <div className="card-body">
-            <p className="card-text">Name: {contact.full_name}</p>
-            <p className="card-text">Address: {contact.address}</p>
-            <p className="card-text">Phone: {contact.phone}</p>
-            <p className="card-text">Email: {contact.email}</p>
+          <div className="col-md-2 colorColumn1"></div>
+          <div className="col-md-1 colorColumn2"></div>
+          <div className="col-md-2">
+            <img
+              src={contact.image || "https://github.com/4GeeksAcademy/MSMARGARA-contactList-react-context/blob/master/src/img/photo.jpg?raw=true"} 
+              className="img-fluid rounded-start img"
+              alt="Contact"
+            />
           </div>
-        </div>
-        <div className="col-md-1">
-            <Link to={`/edit/${contact.id}`} className="btn btn-primary">
-                <span className="bi bi-pencil-fill">lapiz</span>
+          <div className="col-md-6">
+            <div className="card-body text">
+              <p className="card-text name">{contact.full_name}</p>
+              <p className="card-text data">ADDRESS:  <span className="italic">{contact.address}</span></p>
+              <p className="card-text data">PHONE:  <span className="italic">{contact.phone}</span></p>
+              <p className="card-text data">EMAIL:  <span className="italic">{contact.email}</span></p>
+            </div>
+          </div>
+          <div className="col-md-2 offset-md-1 d-flex align-items-center justify-content-center flex-column">
+            <Link to={`/edit/${contact.id}`} className="btn btn_edit">
+                Edit
             </Link>
-        </div>
-        <div className="col-md-1">
-          <button className="btn btn-danger" onClick={handleDeleteContact}>
-            <span className="bi bi-trash-fill">tacho</span> 
-          </button>
+            <button className="btn btn_delete" onClick={handleDeleteContact}>
+                Delete
+            </button>
         </div>
       </div>
     </div>

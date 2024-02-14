@@ -1,7 +1,7 @@
 .home{
     background-color: #faf0e6;
     position: relative;
-    min-height: calc(100vh - 5rem);
+    min-height: calc(100vh - 7rem);
     margin-left: 3rem;
     margin-right: 3rem;
     overflow: auto; 

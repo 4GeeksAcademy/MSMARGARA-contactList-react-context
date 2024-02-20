@@ -59,6 +59,8 @@
 }
 a{
     text-decoration: none;
+    color: #3cb371;
+    font-style: oblique;
 }
 .link{
     font-size: 0.9rem;
